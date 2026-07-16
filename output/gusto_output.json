@@ -1,0 +1,221 @@
+{
+  "competitor": "Gusto",
+  "domain": "gusto.com",
+  "generated_at": "2026-07-16T07:31:36.843991+00:00",
+  "sources": {
+    "website": {
+      "status": "success",
+      "note": "",
+      "checked_at": "2026-07-16T07:30:11.280318+00:00",
+      "depth": "shallow"
+    },
+    "meta_ads": {
+      "status": "failed",
+      "note": "Found company page 'Gusto' (page_id=187776731324057) but the ad-fetch request failed.",
+      "checked_at": "2026-07-16T07:30:27.603852+00:00",
+      "depth": "shallow"
+    },
+    "google_ads": {
+      "status": "success",
+      "note": "40 ad creative(s) found across 3 advertiser(s).",
+      "checked_at": "2026-07-16T07:30:27.723135+00:00",
+      "depth": "shallow"
+    },
+    "press": {
+      "status": "success",
+      "note": "8 press/news result(s) found.",
+      "checked_at": "2026-07-16T07:30:28.101304+00:00",
+      "depth": "shallow"
+    },
+    "social": {
+      "status": "success",
+      "note": "8 social-related result(s) found.",
+      "checked_at": "2026-07-16T07:30:28.488465+00:00",
+      "depth": "shallow"
+    }
+  },
+  "claims": [
+    {
+      "text": "Gusto positions itself as the 'leading partner for small businesses'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto's homepage leads with 'Payroll, HR, Benefits. Simplified.'",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto claims customers save 152 hours per year on average on tax and compliance by switching to Gusto",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "A Gusto customer (Kevin Michael Gray, Approveme.com) reports payroll now takes less than one hour per month, down from one full day per month",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto plans start at $49/mo + $6/mo per person",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto calls itself 'one of the most affordable payroll and HR platforms on the market'",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto has 500,000+ small and medium-sized business customers",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "9 out of 10 Gusto customers would recommend Gusto, per a survey of 538 Gusto customers conducted September 2024",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto's core payroll product is designed for US-based businesses; it does not natively support Canadian payroll",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto offers Canada EOR via a third-party partnership with Remote",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto offers an international contractor add-on for paying international contractors",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto launched Gusto Cofounder, an agentic AI tool, on June 2, 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto Cofounder is described as launching with pre-loaded context from a business's team, payroll schedule, benefits, and compliance calendar",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto Cofounder is positioned as differentiated from 'general-purpose AI tools that start from a blank slate'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto Cofounder can be accessed via SMS or Slack",
+      "source": "social",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto Cofounder was built in eleven weeks by a team of five",
+      "source": "social",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto announced nearly 75 product updates as part of its Spring 2026 Showcase on April 23, 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto now integrates natively with ChatGPT, Claude, and Slack",
+      "source": "social",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto surpassed $1 billion in trailing 12-month revenue, announced May 7, 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto reported five consecutive quarters of accelerating revenue growth as of May 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto launched Gusto Money in October 2025, including a Payroll Bridge line of credit, invoicing, and bill pay",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto launched level-funded health plans claiming an average 20% savings on health insurance premiums",
+      "source": "press",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto launched Gusto 401(k) powered by Guideline",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto launched Payroll Hub for accountants \u2014 a consolidated client payroll dashboard",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto published a report stating Gen Z entrepreneurs now outnumber Baby Boomers in new business starts",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto California, Inc. has Google ads that have been running continuously for between 782 and 1,414 days",
+      "source": "google_ads",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Gusto's international coverage is limited: core payroll is US-only, Canada EOR is via third-party Remote, and there is an international contractor add-on",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Gusto Cofounder's AI context is limited to Gusto's own product surface (payroll, benefits, compliance) and does not span IT or finance spend management",
+      "source": "press",
+      "confidence": 0.9,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Gusto describes its mission as 'taking hats off their head, doing work on their behalf' for small businesses",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto's Spring 2026 Showcase included updates across payroll automation, financial intelligence, AI-powered tools, and mobile",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    }
+  ],
+  "used_embedding_path": false,
+  "total_content_tokens": 7758
+}

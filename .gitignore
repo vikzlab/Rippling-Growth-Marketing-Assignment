@@ -1,0 +1,15 @@
+.env
+.env.local
+*.pyc
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.DS_Store
+*.db
+.streamlit/secrets.toml
+chroma_data/
+*.log
+venv/
+env/
+.vscode/
+.idea/
