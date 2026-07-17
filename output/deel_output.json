@@ -1,0 +1,45 @@
+{
+  "competitor": "Deel",
+  "domain": "deel.com",
+  "generated_at": "2026-07-17T05:51:03.879590+00:00",
+  "sources": {
+    "website": {
+      "status": "success",
+      "note": "",
+      "checked_at": "2026-07-17T05:49:29.705751+00:00",
+      "depth": "shallow",
+      "source_url": "https://deel.com"
+    },
+    "meta_ads": {
+      "status": "success",
+      "note": "30 active ad(s) found for 'Deel' (page_id=845620825830146).",
+      "checked_at": "2026-07-17T05:49:34.037805+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.facebook.com/845620825830146"
+    },
+    "google_ads": {
+      "status": "success",
+      "note": "40 ad creative(s) found across 3 advertiser(s).",
+      "checked_at": "2026-07-17T05:49:34.169608+00:00",
+      "depth": "shallow",
+      "source_url": "https://ads.google.com/intl/en/home/transparency-center/"
+    },
+    "press": {
+      "status": "success",
+      "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 17 chunks -> top 5)",
+      "checked_at": "2026-07-17T05:49:37.329518+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.pymnts.com/back-office/payroll/2026/hr-platform-deel-pursues-120-billion-field-services-market"
+    },
+    "social": {
+      "status": "success",
+      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 15 chunks -> top 5)",
+      "checked_at": "2026-07-17T05:49:40.762886+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.linkedin.com/jobs/view/product-marketing-manager-it-products-at-deel-4105578968"
+    }
+  },
+  "claims": [],
+  "used_embedding_path": true,
+  "total_content_tokens": 9764
+}

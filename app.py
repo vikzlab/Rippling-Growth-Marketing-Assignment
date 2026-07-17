@@ -1,24 +1,5 @@
 """
-app.py
-=======
 Streamlit UI for the competitor marketing intelligence agent.
-
-WHY STREAMLIT: pure Python, no separate frontend stack, and it makes the
-conversational requirement (clarifying questions + follow-ups) a real,
-visible chat interface rather than something narrated in the Loom. Same
-pipeline as the CLI -- this is just a different front end pointed at the
-same flow.py.
-
-HOW TO RUN:
-    streamlit run app.py
-    (opens http://localhost:8501)
-
-WHAT THIS DEMONSTRATES ON CAMERA (for the Loom):
-1. Clarifying questions BEFORE research when a request is ambiguous.
-2. The live research run, with the planner's reasoning shown.
-3. The final brief + grounded claims + the honest gaps (EMPTY/FAILED sources).
-4. Conversational follow-ups ("dig deeper on pricing") that re-run only the
-   relevant slice, not the whole pipeline (PRD Flow C).
 """
 
 import json

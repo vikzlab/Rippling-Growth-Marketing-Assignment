@@ -19,13 +19,13 @@ judgment call over a known, small set of sources, not a task needing deep
 reasoning.
 """
 
-import json
 import os
 
 import anthropic
 
 from config import CHEAP_MODEL
 from state import AgentState, SourceStatus
+from tools.json_parser import parse_json_response
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
@@ -75,10 +75,9 @@ def adaptive_replan(state: AgentState) -> dict:
     )
 
     text = response.content[0].text.strip()
+    result = parse_json_response(text, "adaptive_replan")
 
-    try:
-        result = json.loads(text)
-    except json.JSONDecodeError:
+    if result is None:
         result = {
             "reasoning": "Unable to parse replan response; proceeding with "
             "existing results as-is.",

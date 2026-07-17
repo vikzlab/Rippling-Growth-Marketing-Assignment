@@ -15,13 +15,13 @@ WHY CHEAP MODEL: classifying a short user message against ~6 known
 categories doesn't need frontier-level reasoning.
 """
 
-import json
 import os
 
 import anthropic
 
 from config import CHEAP_MODEL
 from state import AgentState
+from tools.json_parser import parse_json_response
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
@@ -63,10 +63,9 @@ def route_followup(state: AgentState, user_message: str) -> dict:
     )
 
     text = response.content[0].text.strip()
+    result = parse_json_response(text, "route_followup")
 
-    try:
-        result = json.loads(text)
-    except json.JSONDecodeError:
+    if result is None:
         # Fail safe: an unparseable classification is treated the same as
         # "unclear" -- ask, don't guess.
         result = {"category": "unclear", "new_competitor_name": None}

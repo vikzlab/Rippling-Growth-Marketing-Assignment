@@ -1,0 +1,95 @@
+[
+  {
+    "competitor": "Gusto",
+    "overall_score": 0.8,
+    "checks": {
+      "claims_grounded": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "32/32 claims cite a valid source."
+      },
+      "source_diversity": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "5 source type(s) contributed content: ['website', 'meta_ads', 'google_ads', 'press', 'social']"
+      },
+      "gaps_reported": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "No source gaps to report."
+      },
+      "required_sections": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "Required sections present: ['Messaging', 'Relevance to Rippling']"
+      },
+      "rippling_relevance": {
+        "pass": false,
+        "score": 0.0,
+        "detail": "Grader response unparseable."
+      }
+    }
+  },
+  {
+    "competitor": "Deel",
+    "overall_score": 0.6,
+    "checks": {
+      "claims_grounded": {
+        "pass": false,
+        "score": 0.0,
+        "detail": "No claims produced at all."
+      },
+      "source_diversity": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "5 source type(s) contributed content: ['website', 'meta_ads', 'google_ads', 'press', 'social']"
+      },
+      "gaps_reported": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "No source gaps to report."
+      },
+      "required_sections": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "Required sections present: ['Messaging', 'Relevance to Rippling']"
+      },
+      "rippling_relevance": {
+        "pass": false,
+        "score": 0.0,
+        "detail": "Grader response unparseable."
+      }
+    }
+  },
+  {
+    "competitor": "Justworks",
+    "overall_score": 0.8,
+    "checks": {
+      "claims_grounded": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "20/20 claims cite a valid source."
+      },
+      "source_diversity": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "5 source type(s) contributed content: ['website', 'meta_ads', 'google_ads', 'press', 'social']"
+      },
+      "gaps_reported": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "No source gaps to report."
+      },
+      "required_sections": {
+        "pass": true,
+        "score": 1.0,
+        "detail": "Required sections present: ['Messaging', 'Relevance to Rippling']"
+      },
+      "rippling_relevance": {
+        "pass": false,
+        "score": 0.0,
+        "detail": "Grader response unparseable."
+      }
+    }
+  }
+]

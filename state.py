@@ -1,20 +1,6 @@
 """
-state.py
-========
-The structured state object that flows through every step of the Flow (PRD §5.2).
-
-This is what makes the whole architecture work:
-- It's what lets Flow B (graceful degradation) know which sources succeeded,
-  failed, or came back empty, so later steps can reason about what happened.
-- It's what lets Flow C (conversational follow-ups) avoid re-running the whole
-  pipeline — a follow-up just reads what's already here and updates one slice
-  of it.
-- It's what lets Flow D (the content-volume threshold) decide whether to        
-  route into direct synthesis or the embedding path.
-
-CrewAI Flows carry state as a Pydantic model, which gives free validation and
-makes the state's shape self-documenting — anyone reading this file can see
-exactly what the agent knows at any point in the run.
+Pydantic state model for the competitor research pipeline.
+Carries AgentState through all steps; no argument-passing between steps.
 """
 
 from datetime import datetime, timezone
@@ -43,6 +29,7 @@ class SourceResult(BaseModel):
     note: str = ""                 # human-readable reason, esp. for EMPTY/FAILED
     checked_at: Optional[datetime] = None
     depth: str = "shallow"         # "shallow" | "deep" — used by follow-ups (Flow C)
+    source_url: Optional[str] = None  # where the content came from (for verification)
 
 
 class Claim(BaseModel):
@@ -131,6 +118,7 @@ class AgentState(BaseModel):
                     if result.checked_at
                     else None,
                     "depth": result.depth,
+                    "source_url": result.source_url,
                 }
                 for name, result in self.sources.items()
             },

@@ -112,4 +112,5 @@ def search_google_ads(company_name: str, domain: str | None = None) -> SourceRes
         raw_content="\n".join(formatted),
         note=f"{len(ad_creatives)} ad creative(s) found across "
         f"{len(by_advertiser)} advertiser(s).",
+        source_url="https://ads.google.com/intl/en/home/transparency-center/",
     )

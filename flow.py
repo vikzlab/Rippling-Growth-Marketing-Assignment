@@ -1,43 +1,6 @@
 """
-flow.py
-========
-The orchestrator. This is where every step we built gets wired into a single
-event-driven pipeline using CrewAI's Flow primitive.
-
-WHY FLOW, NOT CREW (the core architectural decision, PRD Section 5.1):
-CrewAI's `Crew` primitive runs a team of role-and-backstory agents and calls
-an LLM at essentially every step. That's the wrong shape for this system,
-where most steps (fetching a page, calling an API, counting tokens) are
-mechanical and need no model at all. `Flow` lets us control EXACTLY when an
-LLM is invoked: judgment steps get a model call (tiered cheap vs. frontier),
-and everything else is plain Python. This is what makes the system
-cost-proportional instead of paying agent-overhead on mechanical work.
-
-THE EXECUTION TOPOLOGY (maps directly to the PRD's worked flows):
-
-  clarify  (cheap LLM)         -- ask a question only if genuinely ambiguous
-     |
-  plan_research  (cheap LLM)   -- decide which sources to check, and why
-     |
-  run_research  (plain code)   -- execute the plan; call the source tools
-     |
-  [router: did anything come back EMPTY/FAILED?]
-     |                    \
-  (yes) adaptive_replan   (no) skip -- don't pay for a no-op reasoning call
-  (cheap LLM)                  /
-     |                        /
-  route_by_volume  (plain code) -- is there too much content for one prompt?
-     |                    \
-  (small) direct        (large) embed_and_retrieve (plain code + local vectors)
-     |                        /
-  synthesize  (FRONTIER LLM)   -- the one high-judgment call; produces the
-     |                            graded deliverable (brief + grounded claims)
-  finalize  (plain code)       -- write the JSON output, mark the run done
-
-Every method reads and writes self.state (an AgentState instance). No
-argument-passing between steps -- state is the single source of truth, which
-is exactly what makes the conversational follow-up (Flow C, handled in
-app.py by re-invoking targeted steps) possible without re-running everything.
+CrewAI Flow orchestrator for the competitor research pipeline.
+Each step reads/writes shared AgentState; no argument-passing between steps.
 """
 
 import os

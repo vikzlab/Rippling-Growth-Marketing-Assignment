@@ -242,4 +242,5 @@ def search_meta_ads(company_name: str) -> SourceResult:
         raw_content=formatted,
         note=f"{len(results)} active ad(s) found for '{matched_name}' "
         f"(page_id={page_id}).",
+        source_url=f"https://www.facebook.com/{page_id}",
     )

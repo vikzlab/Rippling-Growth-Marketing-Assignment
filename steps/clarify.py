@@ -12,12 +12,12 @@ low-complexity: the model just needs to recognize genuine ambiguity, not do
 deep reasoning. That makes it a good fit for the fast/cheap model tier.
 """
 
-import json
 import os
 
 import anthropic
 
 from config import CHEAP_MODEL
+from tools.json_parser import parse_json_response
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
@@ -57,11 +57,12 @@ def check_needs_clarification(user_request: str) -> dict:
     )
 
     text = response.content[0].text.strip()
+    parsed = parse_json_response(text, "clarify")
 
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
+    if parsed is None:
         # If the model doesn't return clean JSON, fail safe: proceed without
         # a clarifying question rather than blocking the whole run on a
         # parsing error for what's meant to be a low-stakes check.
         return {"needs_clarification": False, "question": None}
+
+    return parsed

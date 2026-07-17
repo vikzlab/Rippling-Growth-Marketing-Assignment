@@ -96,6 +96,7 @@ def fetch_page(url: str) -> SourceResult:
     return SourceResult(
         status=SourceStatus.SUCCESS,
         raw_content=text,
+        source_url=url,
     )
 
 

@@ -16,13 +16,13 @@ one -- "which of 4 known source types matter here" is not a task that needs
 frontier-level reasoning depth.
 """
 
-import json
 import os
 
 import anthropic
 
 from config import CHEAP_MODEL
 from state import AgentState
+from tools.json_parser import parse_json_response
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
@@ -62,10 +62,9 @@ def plan_research(competitor: str, user_clarifications: dict[str, str]) -> dict:
     )
 
     text = response.content[0].text.strip()
+    parsed = parse_json_response(text, "plan_research")
 
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
+    if parsed is None:
         # Fail safe: if parsing fails, default to checking everything rather
         # than blocking the run -- a conservative default beats a crash.
         return {
@@ -73,6 +72,8 @@ def plan_research(competitor: str, user_clarifications: dict[str, str]) -> dict:
             "reasoning": "Defaulted to checking all sources (planner response "
             "could not be parsed).",
         }
+
+    return parsed
 
 
 def apply_plan_to_state(state: AgentState, plan: dict) -> None:

@@ -1,0 +1,166 @@
+{
+  "competitor": "Justworks",
+  "domain": "justworks.com",
+  "generated_at": "2026-07-17T05:52:15.056945+00:00",
+  "sources": {
+    "website": {
+      "status": "success",
+      "note": "",
+      "checked_at": "2026-07-17T05:51:09.889417+00:00",
+      "depth": "shallow",
+      "source_url": "https://justworks.com"
+    },
+    "meta_ads": {
+      "status": "success",
+      "note": "30 active ad(s) found for 'Justworks' (page_id=414870478589385).",
+      "checked_at": "2026-07-17T05:51:14.964131+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.facebook.com/414870478589385"
+    },
+    "google_ads": {
+      "status": "success",
+      "note": "40 ad creative(s) found across 2 advertiser(s).",
+      "checked_at": "2026-07-17T05:51:15.088638+00:00",
+      "depth": "shallow",
+      "source_url": "https://ads.google.com/intl/en/home/transparency-center/"
+    },
+    "press": {
+      "status": "success",
+      "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 16 chunks -> top 5)",
+      "checked_at": "2026-07-17T05:51:17.776575+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.justworks.com/press/press-release/justworks-launches-new-standalone-payroll-product"
+    },
+    "social": {
+      "status": "success",
+      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 17 chunks -> top 5)",
+      "checked_at": "2026-07-17T05:51:22.009348+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.linkedin.com/in/hannahccopeland"
+    }
+  },
+  "claims": [
+    {
+      "text": "Justworks' primary paid social tagline is 'Focus on what matters. Leave the rest to Justworks.'",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks describes its platform as 'simplified and all-in-one' and targeted at small businesses.",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks positions itself as a PEO and payroll solution for small businesses on its homepage.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks processed over $31 billion in payroll in 2025.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks processed $8.9 billion in total taxes in 2025.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks generated over 268,000 W-2s for PEO customers in 2025.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks supports over 4,000 tax localities.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks offers human support via phone, email, and chat built into the platform, which it describes as 'award-winning'.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks includes international hiring (EOR/contractor) as a capability but frames it as a secondary feature, not a primary identity.",
+      "source": "website",
+      "confidence": 0.85,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks launched an Analytics feature on March 11, 2026, described as 'A Clearer Way to Understand Your Business.'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks launched a Dedicated HR Consulting product on December 5, 2025.",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks launched Automatic Overtime for Payroll in October 2025.",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks launched a new standalone payroll product (press release headline confirmed; full details truncated in source).",
+      "source": "press",
+      "confidence": 0.85,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks rebuilt its website after expanding from a single-product to a multi-solution platform, citing inconsistent design and a fragile CMS as problems.",
+      "source": "social",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks is hiring a Staff Product Marketing Manager for AI & Analytics.",
+      "source": "social",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks is hiring a Senior Product Marketing Manager for Growth and a Senior PMM for Pricing & Packaging.",
+      "source": "social",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks won a Bronze Stevie Award in January 2026 for customer service excellence, described as the ninth consecutive year.",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks' website states the platform supports customers without 'the disruption of learning a whole new system' as needs shift.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Justworks' Analytics launch is framed as passive reporting ('understand your biggest investment'), not workflow automation.",
+      "source": "press",
+      "confidence": 0.9,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Justworks' ICP is explicitly small business; no mid-market or enterprise messaging is present in the sources reviewed.",
+      "source": "website",
+      "confidence": 0.9,
+      "section": "rippling_relevance"
+    }
+  ],
+  "used_embedding_path": true,
+  "total_content_tokens": 9523
+}

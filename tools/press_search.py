@@ -72,6 +72,7 @@ def search_press(company_name: str, days_back: int = 365) -> SourceResult:
         status=SourceStatus.SUCCESS,
         raw_content="\n\n".join(formatted),
         note=f"{len(results)} press/news result(s) found.",
+        source_url=results[0].get("url") if results else None,
     )
 
 
@@ -121,4 +122,5 @@ def search_social(company_name: str) -> SourceResult:
         status=SourceStatus.SUCCESS,
         raw_content="\n\n".join(formatted),
         note=f"{len(results)} social-related result(s) found.",
+        source_url=results[0].get("url") if results else None,
     )

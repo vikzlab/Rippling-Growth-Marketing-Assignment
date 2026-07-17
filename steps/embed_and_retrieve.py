@@ -76,7 +76,11 @@ def embed_and_retrieve(state: AgentState) -> None:
     # across sessions (that would be a genuine "cross-session comparison"
     # feature, noted as a possible future extension in the PRD, not
     # something this assignment requires).
+    # NOTE: ChromaDB's EphemeralClient caches by settings, so multiple calls
+    # in the same process share underlying storage. Collection names must be
+    # scoped to the competitor to avoid data contamination across runs.
     chroma_client = chromadb.EphemeralClient()
+    competitor_lower = state.competitor.lower().replace(" ", "_").replace("/", "_")
 
     for source_name, result in state.sources.items():
         if not result.raw_content:
@@ -89,7 +93,11 @@ def embed_and_retrieve(state: AgentState) -> None:
             # of embedding, just keep the content as-is.
             continue
 
-        collection = chroma_client.create_collection(name=f"source_{source_name}")
+        # Collection name includes competitor to prevent cross-contamination
+        # if multiple competitors are processed in the same Python process
+        # (e.g., in the eval harness).
+        collection_name = f"{competitor_lower}_{source_name}"
+        collection = chroma_client.get_or_create_collection(name=collection_name)
         collection.add(
             documents=chunks,
             ids=[f"{source_name}_{i}" for i in range(len(chunks))],
