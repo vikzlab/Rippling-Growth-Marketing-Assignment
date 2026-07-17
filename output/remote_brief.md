@@ -1,66 +1,53 @@
 ## Messaging & Positioning Themes
 
-**Core Identity: "Global Employment Infrastructure"**
-Remote's primary positioning frame is not "HR software" but **infrastructure** — the underlying layer that other platforms and enterprises run on top of. The website explicitly calls Remote "the infrastructure leading HR platforms trust to deliver global payroll, EOR, and contractor management." This is a deliberate platform/B2B2B play, not just a direct-to-employer pitch.
+**Remote positions itself as "global employment infrastructure" — not a HR suite.** Its homepage and press coverage consistently use the word "infrastructure" (e.g., "the world's leading employment infrastructure," "the global payroll backbone the world's best HR platforms trust"). This is a deliberate B2B2B framing: Remote is not trying to be the system of record for everything; it wants to be the underlying global payroll/EOR engine that other platforms (Workday, HiBob, BambooHR, Personio) plug into.
 
-**Owned-Entity Model as Trust Signal**
-Remote heavily emphasizes that its infrastructure is operated end-to-end in-house — "our own legal experts, our own payroll specialists, and our own compliance teams in every market." The Meta ads reinforce this with copy like "run in-house through 100% owned entities across 75 countries." The implicit competitive wedge is against aggregator EOR models (which use third-party local entities), positioning Remote's owned model as more reliable and compliant.
+**Owned-entity model as the credibility anchor.** Remote repeatedly stresses that it owns its legal entities, payroll engines, and compliance teams in every market it operates in ("100% owned entities across 75 countries"). This "intelligent infrastructure / owned end-to-end" claim is the primary trust signal aimed at enterprise buyers worried about third-party aggregator risk.
 
-**Workday Integration as a Primary Paid Campaign Theme**
-The single most dominant paid ad theme — across at least 10+ Meta ad variants — is Remote's certified integration with **Workday**. Headlines like "Your HR already lives in Workday. Your global payroll can too," "Three costs of running global payroll outside Workday," and "One source of truth. One missing piece" are all designed to intercept Workday enterprise customers who have a global payroll gap. This is a clear enterprise-upmarket push targeting Workday's installed base.
+**Workday integration is the dominant paid-media theme right now.** The entire visible Meta ad library is a concentrated campaign around a single message: Workday customers are running global payroll outside Workday via spreadsheets, and Remote fixes that. Multiple ad variants frame it as a "missing piece" in the Workday source of truth (e.g., "Your HR already lives in Workday. Your global payroll can too," "One source of truth. One missing piece," "Three costs of running global payroll outside Workday").
 
-**Data-Driven Complexity Framing**
-A second major paid ad cluster uses proprietary data to reframe global payroll complexity: "Same headcount, two markets, up to 4× the work to run compliantly — 4.8M payslips, 40 markets." This positions Remote as having operational insight competitors can't match, and is aimed at finance leaders (VP Finance, CFO persona) who think in cost and risk terms.
+**Data-driven complexity narrative.** Several ads reference an original research asset: "4.8M payslips, 40 markets" showing up to 4× compliance complexity variance across markets. This is positioned as finance/CFO-facing content ("finance briefing") rather than HR messaging — a signal that Remote is moving budget approval conversations upmarket toward the CFO/VP Finance persona.
 
-**API-First / MCP / AI Agent Positioning**
-Remote is pushing an API-first message and has launched "Remote MCP" — an integration that gives AI agents live access to payroll, contracts, compliance data, and org structure without API keys or exports. This signals a move toward AI-native infrastructure positioning, attempting to be the employment data layer for enterprise AI workflows.
+**API-first / MCP positioning for technical buyers and platform partners.** Remote highlights REST API, webhooks, CLI, and a new "Remote MCP" product that gives AI agents live access to payroll, contracts, and compliance data without API keys. This is aimed at developers and platform partners embedding global employment into their own products.
 
-**Partner/Embedded Channel**
-Remote explicitly markets itself as the payroll backbone for other HR platforms ("leading HR platforms trust Remote to deliver global payroll"). Its partnership with isolved (announced June 25, 2026, unlocking compliant global hiring for 200,000+ US employers) is a concrete example of this embedded distribution strategy.
+**Social proof framing.** Customer quotes emphasize cost avoidance ($500K+/year saved), headcount avoidance ("I'd need 5–6 FTEs"), and multi-currency/multi-frequency payroll visibility — all ROI-oriented, not feature-oriented.
 
-**Social Proof and Scale**
-Remote claims "4,000+ reviews" and calls itself "the #1 global HR platform as voted by you." Customer testimonials emphasize cost savings ($500K+/year avoided), contractor scale (460+ global contractors), and multi-currency payroll visibility.
+**G2 claim.** Remote's press newsroom explicitly claims "World's Leading Employment Infrastructure" as voted by G2 reviews, citing 4,000+ reviews.
 
 ---
 
 ## What's Changed Recently
 
-**Major Acquisition: Atlas**
-Remote acquired Atlas "to simplify how global teams spend and scale." This expands Remote's footprint — Atlas was an EOR/global employment provider — suggesting Remote is consolidating market share and expanding coverage depth, likely to address any gaps in its owned-entity model.
+**Workday co-marketing is a new, concentrated push.** The sheer density of Workday-specific ad variants (at least 10+ distinct creatives all on the same Workday integration theme) indicates a recent, deliberate campaign — not an always-on message. This is a new ICP target: Workday enterprise customers who have fragmented global payroll running outside their HRIS.
 
-**Payroll Platform Growth: 300%+**
-Press coverage states Remote's "modern payroll platform surpasses 300% growth," framed as the foundation for "an ambitious next chapter as the leading global employment infrastructure." This is both a growth signal and a repositioning of payroll as the core product, not just EOR.
+**Upmarket enterprise move is evidenced by leadership hires and M&A.** Remote's newsroom (dated 2026) announces: a new CBO hire explicitly "to meet surging enterprise demand globally"; acquisition of Atlas ("to simplify how global teams spend and scale"); and acquisition of Bravas (described as expanding global employment infrastructure). These are enterprise-scale signals, not SMB.
 
-**G2 Category Sweep**
-Remote is claiming it "Sweeps G2's Global Employment Platform Category" — reinforcing its review-based #1 positioning with analyst/review-site credibility.
+**Payroll platform growth claim: 300%+ growth.** Remote's newsroom states its "modern payroll platform surpasses 300% growth" — a headline metric being used to support the "ambitious next chapter as leading global employment infrastructure" narrative.
 
-**Leadership Expansion for Enterprise**
-Remote "appoints new CBO and expands leadership team to meet surging enterprise demand globally" — a clear signal that it is accelerating its enterprise GTM motion, not just staying in SMB/mid-market.
+**AI product launch: Surveys via MCP.** Remote introduced "AI-native Surveys" to convert employee feedback into real-time workforce insights, and the MCP integration (AI agents on live employment data) is newly surfaced on the homepage — indicating Remote is building an AI narrative on top of its infrastructure positioning.
 
-**isolved Partnership (June 2026)**
-Remote partners with isolved, a US-based HR/payroll platform serving 200,000+ US employers, to enable compliant global hiring for that base. This is a direct embedded-distribution play into the US SMB/mid-market segment via a channel partner.
-
-**AI/MCP Launch**
-Remote MCP — giving AI agents live access to employment data — appears to be a recent product push, reflecting Remote's attempt to be positioned as AI-ready infrastructure before competitors can claim that space.
-
-**Workday Campaign Intensity**
-The volume and consistency of Workday-focused Meta ads (10+ variants, all download-gated) suggests this is an active, sustained campaign rather than a test — Remote is allocating meaningful paid spend to steal Workday's global payroll adjacency.
+**ICP expansion toward finance buyers.** The "finance briefing" ad format (CFO/VP Finance persona, cost-per-market complexity data) is a newer content-marketing motion layered on top of the traditional HR buyer ads, suggesting Remote is diversifying beyond the HR/People persona.
 
 ---
 
 ## Relevance to Rippling
 
-**1. The Workday Integration Campaign Exposes a Specific Attack Surface for Rippling**
-Remote's most active paid campaign tells Workday customers: "your global payroll is broken — we'll fix it." This is Remote presenting itself as a bolt-on to Workday, which is precisely the "point solution bolted onto an HRIS" model that Rippling exists to replace. Rippling's counter-narrative should be: *why are you paying for Workday + Remote when one unified system does both — and shares a single employee record that actually enables automation?* Remote's pitch requires Workday customers to maintain two systems and a handoff; Rippling's pitch eliminates the handoff entirely. Rippling should run conquest campaigns targeting "Workday + Remote" or "Workday global payroll" searchers with messaging explicitly addressing the integration tax Remote is normalizing.
+**1. Remote's Workday campaign exposes the exact gap Rippling already closes — and Rippling should run directly at it.**
 
-**2. Remote's "Infrastructure" Positioning Is Actually a Structural Weakness Rippling Can Name**
-Remote positions itself as the backbone *other* HR platforms run on — it is admitting it is a layer, not a complete system. This means Remote customers still need an HRIS, a device management solution, a spend management tool, etc. Rippling's unified platform directly answers this: Remote gives you global payroll compliance; Rippling gives you that *plus* HR, IT, and Finance in one data model. Rippling's marketing could explicitly call out that "infrastructure" is another word for "incomplete" — you still need five other vendors.
+Remote's most active paid media is selling Workday customers on a *separate* global payroll tool that integrates with Workday. This is the bolt-together architecture Rippling's entire brand narrative is built against. Remote is literally advertising the problem Rippling solves natively: HR data living in one system, payroll living somewhere else, connected by an integration. Rippling's marketing team should directly intercept Workday + global payroll search queries and social audiences with a counter-message: "Why integrate when you can consolidate?" — emphasizing that Rippling's single employee record means payroll, HR, IT, and Finance share one data foundation, with no handoff, no integration tax, no spreadsheet gap. Remote's own ad copy ("Workday hands off. Your spreadsheet picks up") is the perfect foil to quote or riff on.
 
-**3. The isolved Partnership Targets Rippling's Core US SMB/Mid-Market Segment**
-Remote's partnership with isolved — a US-focused HR platform serving 200,000+ employers — is a direct attempt to embed global hiring capability into the SMB/mid-market US customer base that Rippling dominates. This is Remote using channel distribution to reach Rippling's core buyers. Rippling should prioritize messaging to isolved's customer profile (US-based employers needing to hire their first international employees) emphasizing that Rippling handles global EOR *natively* within the same system they already use for US payroll — no second vendor, no integration, no data sync.
+**2. Remote's "infrastructure for other platforms" positioning is a concession that it cannot be the full workforce system — Rippling should exploit this.**
 
-**4. Remote's AI/MCP Push Is Vulnerable to Rippling's First-Party Data Argument**
-Remote's MCP gives AI agents access to employment data — but that data is *only* employment/payroll data. Rippling's unified record spans HR, IT, Finance, and product usage signals across 30+ products. Rippling's AI features can reason across the full employee lifecycle (onboarding triggers, device provisioning, spend anomalies, headcount changes) in ways Remote structurally cannot, because Remote only owns one slice of the data. Rippling should position its AI capabilities not as "AI on top of HR" but as "AI with the only unified workforce dataset" — making Remote's MCP look like a narrow pipe into a single data silo.
+Remote explicitly markets itself as the backend that Workday, HiBob, BambooHR, and Personio run on top of. That means Remote customers are, by definition, running multiple-vendor stacks. Rippling's differentiator is that it *is* the unified platform — HR, payroll, IT, and Finance in one — not a layer underneath someone else's system. For prospects currently evaluating "HRIS + Remote for global payroll," Rippling can pitch: "Stop adding another integration. Rippling does global EOR/payroll natively, inside the same platform that runs your US payroll, benefits, devices, and spend." This directly attacks Remote's acknowledged architectural limitation.
 
-**5. Remote's 300% Payroll Growth Claim Is a Signal — Not a Threat — to Rippling's Differentiation**
-Remote growing fast in global payroll confirms market demand, but Remote's growth is in *compliance-as-a-service* for distributed teams, not in replacing the full HR/IT/Finance stack. Rippling should not treat this as symmetric competition; instead, it should use Remote's growth as proof-of-category validation while positioning Rippling as the destination for companies that have outgrown the "EOR-only" phase and need a unified system to manage their global workforce operationally, not just legally.
+**3. Remote is moving upmarket into Workday enterprise accounts — a segment where Rippling is also expanding — and the timing is competitive.**
+
+Remote's CBO hire, Atlas acquisition, and concentrated Workday advertising all point to an enterprise push in 2025–2026. Rippling recently became the #1 mid-market payroll provider and is expanding upmarket. Both companies are fishing in the same pond. Rippling's advantage here is breadth: Remote sells global payroll/EOR; Rippling sells global payroll/EOR *plus* US payroll, benefits, devices, spend management, and more — all unified. The sales counter-narrative for enterprise deals should be: "Remote requires you to keep Workday (or another HRIS) for everything else. Rippling can replace the whole stack or sit alongside it with deeper automation because the data is native, not integrated."
+
+**4. Remote's CFO/finance buyer targeting is a content marketing opportunity Rippling can match with a sharper unification angle.**
+
+Remote is publishing "finance briefings" about the hidden cost of multi-market payroll complexity. Rippling can produce comparable content aimed at the same CFO persona, but with a stronger hook: the *total* cost of a fragmented HR+IT+Finance stack (not just payroll markets) — i.e., the cost of disconnected systems, manual reconciliation, and compliance gaps across HR, payroll, spend, and device management. Rippling's cross-product data foundation makes this a uniquely ownable narrative that Remote cannot replicate without admitting it is itself a point solution within a larger stack.
+
+**5. One area where Rippling should not overreach: owned-entity breadth.**
+
+Remote's "100% owned entities across 75 countries" claim is a credible enterprise trust signal that Rippling, as a US-first builder, cannot straightforwardly match on global EOR depth today. Rippling's marketing should avoid a head-on "we have more countries" fight and instead reframe the choice: "For companies that need a true workforce OS — not just a global EOR vendor — Rippling's unified platform delivers more value even if your global footprint is concentrated in key markets." Lead with unification and automation depth, not country count.

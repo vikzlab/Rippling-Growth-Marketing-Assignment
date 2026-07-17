@@ -1,9 +1,7 @@
 """
 Eval harness: runs the agent against test competitors and scores against rubric.
 
-Run:  python -m eval.run_eval
-"""
-(from the project root, so imports resolve)
+Run:  python -m eval.run_eval  (from the project root, so imports resolve)
 """
 
 import json
