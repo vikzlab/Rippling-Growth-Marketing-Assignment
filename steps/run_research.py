@@ -1,12 +1,6 @@
 """
-steps/run_research.py
-======================
-Executes the research plan produced by steps/plan_research.py -- calling the
-actual tools/ functions for each source the planner decided to check.
-
-PLAIN CODE, no LLM call here. "Call this function for each source in the
-plan" is mechanical dispatch, not a judgment call -- the judgment already
-happened in plan_research.py. This file just does what it's told.
+Executes the research plan by calling tool functions for each source.
+Dispatch only — no LLM involved.
 """
 
 from datetime import datetime, timezone

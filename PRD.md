@@ -3,8 +3,6 @@
 |  |  |
 | :---- | :---- |
 | **Author** | Vikram Murali |
-| **Status** | v2 — cost-aware architecture, worked end-to-end flows |
-| **Last updated** | July 2026 |
 | **One-liner** | A conversational agent that takes any competitor's name or domain and produces a structured, evidence-grounded brief on their marketing strategy and positioning — architected so autonomy is spent only where judgment is genuinely required. |
 
 ---
@@ -74,10 +72,11 @@ Rippling competes across payroll, HRIS, spend management, IT, and workforce mana
 
 | Source | Access method | Cost |
 | :---- | :---- | :---- |
+| Website / pricing pages | Direct fetch (generic HTML extraction, no site-specific logic) | Free |
 | Meta Ad Library | ScrapeCreators, two-step lookup (see below) | Free starting credits cover assignment scope |
 | Google Ads Transparency Center | SerpApi's dedicated google\_ads\_transparency\_center engine | Free trial tier covers assignment scope |
-| Website / pricing pages | Direct fetch (generic HTML extraction, no site-specific logic) | Free |
-| General web / press / social | Tavily | Free tier |
+| Press / announcements | Tavily web search | Free tier |
+| Social media | Tavily web search (scoped to LinkedIn, X/Twitter) | Free tier |
 
 
   Neither Meta nor Google offers an official commercial API for ad data — this is documented, not an oversight. Both ad sources are accessed through third-party wrappers with confirmed, documented response schemas, rather than raw scraping or an unverified assumption about response shape.
@@ -459,13 +458,3 @@ Rippling competes across payroll, HRIS, spend management, IT, and workforce mana
 - **Threshold tuning.** The content-volume cutoff (§5.4) is a judgment call I'd validate empirically against a few real competitors rather than pick arbitrarily.  
 - **Follow-up scope creep.** A follow-up that doesn't map cleanly to an existing category needs a fallback — likely "re-run full research" as the safe default when classification confidence is low.
 
-  ## 10\. Milestones (72-hour build)
-
-- [ ] Hour 0-8: Stack confirmed, SerpApi trial \+ search API keys working, Flow skeleton scaffolded  
-- [ ] Hour 8-24: Research step (plain code) \+ planner step (cheap model) working end-to-end for one competitor  
-- [ ] Hour 24-36: Synthesis step (frontier model) producing grounded markdown \+ JSON  
-- [ ] Hour 36-48: Conversational shell — clarifying questions, follow-up routing (Flow C)  
-- [ ] Hour 48-56: Graceful degradation tested explicitly (Flow B), content-volume threshold \+ embedding path built (Flow D)  
-- [ ] Hour 56-66: Eval harness run across 2-3 competitors, cost report generated  
-- [ ] Hour 66-72: Record Loom, repo cleanup, submit  
-      

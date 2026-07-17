@@ -1,17 +1,6 @@
 """
-tools/press_search.py
-======================
-General web search for press coverage, announcements, and recent news about a
-competitor. Uses Tavily, which is built specifically for feeding search
-results to AI agents (clean, pre-summarized snippets, not raw HTML to parse
-ourselves).
-
-This covers the "recent product launches, press, or announcements" and
-"social media presence" requirements from the assignment (R2) that don't have
-a dedicated structured source the way ads do.
-
-PLAIN CODE — no LLM call. This just retrieves; deciding what's actually
-significant about what it finds happens later, in steps/synthesize.py.
+Web search for press coverage, announcements, and social media presence.
+Uses Tavily for clean, pre-summarized results.
 """
 
 import os

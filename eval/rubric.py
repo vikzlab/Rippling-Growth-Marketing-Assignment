@@ -1,27 +1,7 @@
 """
-eval/rubric.py
-===============
-The scoring rubric for evaluating a competitor brief. This is the heart of
-the eval system (assignment deliverable E1): it defines what "good output"
-actually means, in checkable terms, rather than leaving it to eyeballing.
-
-DESIGN PRINCIPLE: every check here maps to a specific claim the architecture
-makes about itself. If the system says it grounds claims in sources, there's
-a check that verifies claims actually cite real sources. If it says it
-degrades gracefully, there's a check that verifies gaps are reported, not
-hidden. An eval that doesn't test the system's actual promises isn't an eval,
-it's decoration.
-
-Two kinds of checks:
-  1. DETERMINISTIC checks (plain code) -- things we can verify mechanically
-     without an LLM: does every claim cite a valid source? were multiple
-     source types checked? are gaps explicitly noted? These are cheap,
-     objective, and never flaky.
-  2. LLM-GRADED checks (one cheap-model call) -- things that need judgment:
-     is the "Relevance to Rippling" section actually specific and actionable,
-     or generic filler? This is the one subjective quality that can't be
-     checked with string matching, so it gets a model grader -- but a cheap
-     one, since grading against a clear rubric is not a frontier-level task.
+Scoring rubric for evaluating competitor briefs.
+Deterministic checks: grounding, diversity, gaps, sections.
+LLM-graded check: Relevance to Rippling section specificity.
 """
 
 import json
@@ -31,6 +11,7 @@ import anthropic
 
 from config import CHEAP_MODEL
 from state import AgentState, SourceStatus
+from tools.json_parser import parse_json_response
 
 
 # ---------------------------------------------------------------------- #
@@ -164,16 +145,19 @@ def grade_rippling_relevance(state: AgentState) -> dict:
         messages=[{"role": "user", "content": relevance_text}],
     )
 
+    text = response.content[0].text.strip()
+    result = parse_json_response(text, "rippling_relevance_grader")
+    if result is None:
+        return {"pass": False, "score": 0.0, "detail": "Grader response unparseable."}
     try:
-        result = json.loads(response.content[0].text.strip())
         score = float(result.get("score", 0.0))
         return {
             "pass": score >= 0.6,
             "score": score,
             "detail": result.get("reason", ""),
         }
-    except (json.JSONDecodeError, ValueError):
-        return {"pass": False, "score": 0.0, "detail": "Grader response unparseable."}
+    except (TypeError, ValueError):
+        return {"pass": False, "score": 0.0, "detail": "Grader score not a valid float."}
 
 
 # ---------------------------------------------------------------------- #

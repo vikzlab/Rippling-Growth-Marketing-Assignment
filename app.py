@@ -39,6 +39,13 @@ def _handle_pricing_followup(state: AgentState) -> None:
         deeper = fetch_page(pricing_links[0])
         deeper.depth = "deep"
         state.sources["website"] = deeper
+    else:
+        # No public pricing page found — update the note so synthesis can
+        # explicitly report this (e.g. Workday / enterprise-only competitors
+        # deliberately hide pricing behind "contact sales").
+        existing = state.sources["website"]
+        suffix = "No public pricing page found — likely contact-sales only."
+        existing.note = (existing.note.rstrip(". ") + ". " + suffix) if existing.note else suffix
 
 
 def _handle_press_followup(state: AgentState) -> None:
@@ -156,7 +163,7 @@ if st.session_state.pending_clarification:
         st.session_state.messages = []
 
 # ---------------------------------------------------------------------- #
-# RESULTS + CONVERSATIONAL FOLLOW-UPS (Flow C)
+# RESULTS + CONVERSATIONAL FOLLOW-UPS 
 # ---------------------------------------------------------------------- #
 if st.session_state.agent_state is not None:
     state = st.session_state.agent_state
@@ -168,29 +175,54 @@ if st.session_state.agent_state is not None:
     st.subheader("Follow up")
     st.caption('Try: "dig deeper on their pricing" · "what about their recent news" · "run this for Deel"')
 
+    # Render conversation history so the user can see what was asked and what happened.
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
     followup = st.chat_input("Ask a follow-up…")
     if followup:
-        # Route the follow-up to a category WITHOUT re-running everything.
+        # Show the user's message immediately before doing anything else.
+        st.session_state.messages.append({"role": "user", "content": followup})
+        with st.chat_message("user"):
+            st.markdown(followup)
+
         routing = route_followup(state, followup)
         category = routing.get("category", "unclear")
 
         if category == "unclear":
-            st.warning("I'm not sure which part you mean — try naming a specific area "
-                       "like pricing, positioning, ads, or recent news.")
+            reply = ("I'm not sure which part you mean — try naming a specific area "
+                     "like pricing, positioning, ads, or recent news.")
+            st.session_state.messages.append({"role": "assistant", "content": reply})
+            with st.chat_message("assistant"):
+                st.markdown(reply)
 
         elif category == "new_competitor":
             new_name = routing.get("new_competitor_name") or followup
+            reply = f"Starting a fresh research run for **{new_name}**…"
+            st.session_state.messages.append({"role": "assistant", "content": reply})
+            with st.chat_message("assistant"):
+                st.markdown(reply)
             with st.spinner(f"Researching {new_name}…"):
                 st.session_state.agent_state = run_competitor_research(new_name)
+            st.session_state.messages = []
             st.rerun()
 
         else:
-            # Scoped follow-up: act ONLY on the category the router identified,
-            # reusing everything else already in state.
+            _CATEGORY_LABELS = {
+                "pricing": "pricing page",
+                "press": "recent press & announcements",
+                "recent_changes": "recent press & announcements",
+                "social": "social media presence",
+                "ads": "Meta + Google ad creative",
+            }
+            label = _CATEGORY_LABELS.get(category, category)
             handler = FOLLOWUP_HANDLERS.get(category)
             if handler:
-                with st.spinner(f"Digging deeper on {category}…"):
+                with st.spinner(f"Re-fetching {label} and updating the brief…"):
                     handler(state)
                     synthesize(state)
                     st.session_state.agent_state = state
-                st.rerun()
+                reply = f"Fetched fresh **{label}** data and re-synthesized the brief above. Scroll up to see the updated analysis."
+                st.session_state.messages.append({"role": "assistant", "content": reply})
+            st.rerun()

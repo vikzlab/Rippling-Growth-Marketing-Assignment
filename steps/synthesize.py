@@ -1,31 +1,6 @@
 """
-steps/synthesize.py
-====================
-The most important file in the system. Takes all retrieved raw content and
-produces the two required deliverables (PRD Section 6, O1/O2):
-  - a markdown brief (messaging, positioning, recent changes, Rippling
-    relevance)
-  - a list of Claim objects, each grounded in a specific source
-
-WHY FRONTIER MODEL: this is the one step where reasoning quality directly
-determines whether the whole deliverable is any good. The assignment
-explicitly grades "is the relevance to Rippling section insightful" -- that's
-not a task to hand to a cheap/fast model. Per PRD Section 5.1, this is one of
-only two frontier-model calls in the entire pipeline.
-
-GROUNDING (PRD Section 5.5): the system prompt instructs the model to cite a
-source for every claim, and to say "not found" rather than invent something
-when a source is empty. This is the same anti-hallucination pattern used in
-prior grounded-classification work -- a claim with no real source shouldn't
-exist in the output.
-
-COMPANY CONTEXT: the system prompt includes Rippling's actual competitive
-position (differentiator, known weakness, competitive set, GTM thesis) --
-not just its product category. Without this, the model can only produce
-generic filler ("consider improving your marketing") for the highest-graded
-section of the deliverable. With it, the model can reason relationally
-("this competitor's messaging exposes a gap Rippling's unified data model
-already answers").
+Takes retrieved raw content and produces a markdown brief (messaging, positioning,
+recent changes, Rippling relevance) plus a list of grounded claims with sources.
 """
 
 import json
@@ -35,6 +10,7 @@ import anthropic
 
 from config import FRONTIER_MODEL
 from state import AgentState, Claim
+from tools.json_parser import parse_json_response
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
@@ -162,12 +138,16 @@ def _parse_synthesis_output(raw_text: str) -> tuple[str, str]:
 def _parse_claims(claims_json: str) -> list[Claim]:
     """Parses the claims JSON into validated Claim objects. Any individual
     claim that fails Pydantic validation (e.g. confidence out of 0-1 range,
-    missing field) is dropped rather than failing the whole batch -- one
-    malformed claim shouldn't discard everything else the model got right.
+    missing field) is dropped rather than failing the whole batch.
     """
+    # Try direct parse first; fall back to parse_json_response which handles
+    # markdown code blocks (```json...```) that the model sometimes wraps claims in.
     try:
         raw_claims = json.loads(claims_json)
     except json.JSONDecodeError:
+        raw_claims = parse_json_response(claims_json, "claims")
+
+    if not isinstance(raw_claims, list):
         return []
 
     claims = []
@@ -175,6 +155,6 @@ def _parse_claims(claims_json: str) -> list[Claim]:
         try:
             claims.append(Claim(**item))
         except Exception:
-            continue  # skip malformed individual claims, keep the rest
+            continue
 
     return claims

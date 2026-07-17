@@ -1,20 +1,6 @@
 """
-tools/scrapecreators_facebook.py
-=================================
-Wraps ScrapeCreators' Facebook Ad Library API.
-
-Two-step lookup, both steps confirmed against real docs:
-  1. search_companies(name)   -- turn a company name into a Facebook page_id
-  2. get_company_ads(page_id) -- pull that page's active ad creative
-
-search_meta_ads() at the bottom ties both steps together into the single
-function steps/run_research.py actually calls -- from the rest of the
-system's point of view, this whole two-step lookup is invisible; it just
-looks like any other source-fetching function.
-
-PLAIN CODE -- no LLM call happens anywhere in this file. Matching a company
-name to the right page, and formatting ad data, are both mechanical
-decisions, not judgment calls.
+Fetches active Meta ad creative via ScrapeCreators' Facebook Ad Library API.
+Two-step: company name → page_id → ads.
 """
 
 import os
@@ -108,30 +94,23 @@ def find_best_company_match(query: str, results: list[dict]) -> dict | None:
     return ranked[0]
 
 
-def get_company_ads(page_id: str) -> dict | None:
-    """Fetch a company's ad library entries given their Facebook page_id.
+def get_company_ads(page_id: str) -> tuple[dict | None, str]:
+    """Fetch a company's active ad library entries given their Facebook page_id.
 
-    Returns the raw parsed JSON response (with "results" and "cursor" keys),
-    or None on any failure. We only fetch the first page -- ScrapeCreators
-    supports cursor-based pagination for deeper results, but a competitor
-    brief doesn't need exhaustive ad history, just a representative sample
-    of what's currently running.
-
-    status="ACTIVE" (the API default) is used explicitly rather than left
-    implicit, since "what are they running RIGHT NOW" is what a marketing
-    positioning brief actually needs -- not their full historical ad log.
+    Returns (data, error_note). On success, data is the parsed JSON response
+    and error_note is "". On failure, data is None and error_note describes why.
+    Returning both lets the caller include the specific failure reason in the
+    SourceResult note rather than just logging "request failed."
     """
     api_key = os.getenv("SCRAPECREATORS_API_KEY")
     if not api_key:
-        return None
+        return None, "SCRAPECREATORS_API_KEY not set."
 
     headers = {"x-api-key": api_key}
     params = {
         "pageId": page_id,
         "status": "ACTIVE",
-        "sort_by": "total_impressions",  # surface the highest-reach ads
-                                          # first -- most representative of
-                                          # their actual current strategy
+        "sort_by": "total_impressions",
     }
 
     try:
@@ -141,16 +120,16 @@ def get_company_ads(page_id: str) -> dict | None:
             params=params,
             timeout=REQUEST_TIMEOUT_SECONDS,
         )
-    except requests.RequestException:
-        return None
+    except requests.RequestException as exc:
+        return None, f"Request exception: {exc}"
 
     if response.status_code != 200:
-        return None
+        return None, f"HTTP {response.status_code}: {response.text[:200]}"
 
     try:
-        return response.json()
+        return response.json(), ""
     except ValueError:
-        return None
+        return None, "Response was not valid JSON."
 
 
 def _format_ads(ads_response: dict) -> str:
@@ -165,13 +144,15 @@ def _format_ads(ads_response: dict) -> str:
 
     for ad in results[:MAX_ADS_TO_FORMAT]:
         snapshot = ad.get("snapshot", {}) or {}
+        title = snapshot.get("title", "")
         body = (snapshot.get("body") or {}).get("text", "")
         cta = snapshot.get("cta_text", "")
         display_format = snapshot.get("display_format", "")
         platforms = ", ".join(ad.get("publisher_platform", []) or [])
-        is_active = ad.get("is_active", False)
 
-        line = f"- [{display_format}, {platforms}, active={is_active}]"
+        line = f"- [{display_format}, {platforms}]"
+        if title:
+            line += f' Headline: "{title}"'
         if body:
             line += f' Copy: "{body.strip()}"'
         if cta:
@@ -218,13 +199,13 @@ def search_meta_ads(company_name: str) -> SourceResult:
     matched_name = best_match.get("name", company_name)
 
     # Step 2: fetch that page's active ads.
-    ads_response = get_company_ads(page_id)
+    ads_response, error_note = get_company_ads(page_id)
 
     if ads_response is None:
         return SourceResult(
             status=SourceStatus.FAILED,
             note=f"Found company page '{matched_name}' (page_id={page_id}) "
-            "but the ad-fetch request failed.",
+            f"but the ad-fetch request failed: {error_note}",
         )
 
     results = ads_response.get("results", [])

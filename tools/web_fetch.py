@@ -1,14 +1,5 @@
 """
-tools/web_fetch.py
-===================
-Fetches a competitor's website or pricing page and extracts clean, readable
-text. This is PLAIN CODE — no LLM call happens here. Per the PRD's cost design
-(§5.1), fetching a URL is mechanical, not a judgment call, so it costs nothing
-but a network request.
-
-Used by steps/run_research.py (initial shallow fetch) and again by
-steps/route_followup.py when a follow-up needs a DEEPER fetch (e.g. "dig
-deeper on pricing" — see PRD Flow C).
+Fetches and extracts clean text from competitor websites and pricing pages.
 """
 
 import re

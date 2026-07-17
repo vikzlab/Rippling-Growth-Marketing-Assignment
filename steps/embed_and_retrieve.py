@@ -1,14 +1,6 @@
 """
-steps/embed_and_retrieve.py
-============================
-The ONLY place in this system that touches a vector database. Only called
-when steps/volume_router.py decides content volume crosses the threshold
-(PRD Flow D -- the large-footprint case, e.g. a Microsoft-scale competitor).
-
-For a typical competitor, this file is never invoked -- content goes
-directly into synthesis. This is deliberate: a vector DB solves a real
-problem (too much raw content to usefully fit in one prompt) and shouldn't
-be reached for by default just because it's available.
+Chunks, embeds, and retrieves the most relevant content when total tokens
+exceed the synthesis threshold. Optional optimization for large competitor footprints.
 """
 
 import re

@@ -1,12 +1,6 @@
 """
-tools/json_parser.py
-=====================
-Robust JSON parser for LLM responses. Handles wrapped code blocks, extra
-whitespace, and partial outputs without crashing — logs issues and returns
-a sensible fallback instead of silently using defaults.
-
-Used by all cheap-model steps (plan_research, adaptive_replan, clarify,
-route_followup) so unparseable responses fail gracefully and are logged.
+Robust JSON parser for LLM responses. Handles markdown code blocks and partial
+output without crashing.
 """
 
 import json

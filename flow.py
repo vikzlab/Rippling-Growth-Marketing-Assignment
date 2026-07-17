@@ -3,6 +3,7 @@ CrewAI Flow orchestrator for the competitor research pipeline.
 Each step reads/writes shared AgentState; no argument-passing between steps.
 """
 
+import json
 import os
 
 from dotenv import load_dotenv
@@ -195,8 +196,6 @@ class CompetitorResearchFlow(Flow[AgentState]):
         Plain code -- just serialization. Returns the output dict so
         flow.kickoff() has a meaningful return value.
         """
-        import json
-
         os.makedirs("output", exist_ok=True)
         safe_name = self.state.competitor.lower().replace(" ", "_").replace("/", "_")
 

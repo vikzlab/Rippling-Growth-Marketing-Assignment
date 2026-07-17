@@ -1,28 +1,8 @@
 """
-eval/run_eval.py
-=================
-The eval harness (assignment deliverable E1). Runs the full agent against a
-set of test competitors, scores each output against the rubric, and prints a
-consolidated report.
-
-WHY THESE THREE TEST COMPETITORS (deliberately chosen to stress different
-parts of the system, not just "run it three times"):
-
-  - Gusto: a direct, well-known competitor with rich public marketing. The
-    "everything works cleanly" baseline -- should score high across all
-    checks and exercises the happy path (PRD Flow A).
-
-  - Deel: Rippling's most strategically important rival (global-first). Tests
-    whether synthesis produces a genuinely INSIGHTFUL Rippling-relevance
-    section on a competitor where the competitive tension is real and
-    specific (global reach vs. US-first).
-
-  - A deliberately obscure/small competitor: likely to trigger EMPTY on the
-    ad-library sources, which is exactly what exercises the graceful-
-    degradation check (E2 / PRD Flow B). If this one still produces a usable
-    brief that HONESTLY reports its gaps, the degradation design works.
+Eval harness: runs the agent against test competitors and scores against rubric.
 
 Run:  python -m eval.run_eval
+"""
 (from the project root, so imports resolve)
 """
 

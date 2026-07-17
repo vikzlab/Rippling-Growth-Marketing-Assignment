@@ -1,14 +1,6 @@
 """
-tools/token_counter.py
-=======================
-Counts tokens in retrieved content to decide whether it's small enough to
-pass directly into the synthesis prompt, or large enough to need the
-chunk-and-embed retrieval path instead (PRD Section 5.4 -- the content-volume
-threshold).
-
-This is the file that makes that threshold a real, inspectable decision
-point in the code, not just a design intention. It's PLAIN CODE -- counting
-tokens is arithmetic, not judgment, so it costs nothing and needs no LLM.
+Counts tokens in retrieved content to decide if chunking/embedding is needed.
+Routes based on content volume threshold.
 """
 
 import tiktoken

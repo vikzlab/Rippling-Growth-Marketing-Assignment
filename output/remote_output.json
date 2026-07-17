@@ -1,0 +1,184 @@
+{
+  "competitor": "Remote",
+  "domain": "remote.com",
+  "generated_at": "2026-07-17T07:54:33.146192+00:00",
+  "sources": {
+    "website": {
+      "status": "success",
+      "note": "(content reduced via embedding retrieval: 7 chunks -> top 5)",
+      "checked_at": "2026-07-17T07:52:53.393734+00:00",
+      "depth": "shallow",
+      "source_url": "https://remote.com"
+    },
+    "meta_ads": {
+      "status": "success",
+      "note": "30 active ad(s) found for 'Remote' (page_id=1466473156944083).",
+      "checked_at": "2026-07-17T07:53:04.153918+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.facebook.com/1466473156944083"
+    },
+    "google_ads": {
+      "status": "success",
+      "note": "40 ad creative(s) found for 'Remote Technology Services Inc'. 6 detail call(s) made for copy.",
+      "checked_at": "2026-07-17T07:53:12.771675+00:00",
+      "depth": "shallow",
+      "source_url": "https://ads.google.com/intl/en/home/transparency-center/"
+    },
+    "press": {
+      "status": "success",
+      "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 15 chunks -> top 5)",
+      "checked_at": "2026-07-17T07:53:18.218162+00:00",
+      "depth": "shallow",
+      "source_url": "https://remote.com/news"
+    },
+    "social": {
+      "status": "success",
+      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 17 chunks -> top 5)",
+      "checked_at": "2026-07-17T07:53:22.489538+00:00",
+      "depth": "shallow",
+      "source_url": "https://www.linkedin.com/advice/0/heres-how-you-can-navigate-impact-remote-work-v6dve"
+    }
+  },
+  "claims": [
+    {
+      "text": "Remote positions itself as 'the infrastructure leading HR platforms trust to deliver global payroll, EOR, and contractor management to their customers.'",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote claims to operate end-to-end in-house with its own legal experts, payroll specialists, and compliance teams in every market it operates in.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote's Meta ads include at least 10 distinct variants focused on its Workday integration, including headlines like 'Your HR already lives in Workday. Your global payroll can too.'",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote Meta ad copy states its Workday integration is 'run in-house through 100% owned entities across 75 countries.'",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote Meta ads reference a dataset of '4.8M payslips, 40 markets' to support claims that payroll complexity varies by 'up to 4\u00d7 across markets.'",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote Meta ads target a finance leader persona with cost-framing copy such as 'Three costs of running global payroll outside Workday: Hours per cycle you don't track. Risk no one prices. Process knowledge stuck in one head.'",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote has launched 'Remote MCP,' described as giving AI agents a live, secure connection to payroll, contracts, compliance data, and org structure without API keys or exports.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote describes itself as 'API-first by design' with REST API, webhooks, and CLI available for building custom workflows or embedding global employment into other products.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote claims '4,000+ reviews' and calls itself 'the #1 global HR platform as voted by you.'",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "A Remote customer (Luke McKinlay, VP of Finance) states that using Remote saves over $500,000 per year compared to managing operations in-house.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "A Remote customer (Erik Sveen, Founder and CEO) states he manages 460+ contractors globally through Remote.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote lists native integrations with Workday, HiBob, BambooHR, Personio, and others.",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Remote acquired Atlas 'to simplify how global teams spend and scale.'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote's press coverage states its 'modern payroll platform surpasses 300% growth.'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote press coverage states it 'Sweeps G2's Global Employment Platform Category.'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote announced the appointment of a new CBO and expansion of its leadership team 'to meet surging enterprise demand globally.'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote announced a partnership with isolved on June 25, 2026, described as unlocking compliant global hiring for 200,000+ US employers.",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote introduced new AI-native 'Surveys' to transform employee feedback into real-time workforce insights.",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote's Workday-focused Meta ad campaign uses download-gated content across multiple variants, indicating a sustained paid investment rather than a test.",
+      "source": "meta_ads",
+      "confidence": 0.85,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Remote's positioning as 'infrastructure' for other HR platforms means it is not a complete workforce management system, requiring customers to maintain additional HRIS, IT, and finance tools.",
+      "source": "website",
+      "confidence": 0.9,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Remote's Workday integration campaign normalizes a two-vendor model (Workday + Remote) that Rippling's unified platform is designed to eliminate.",
+      "source": "meta_ads",
+      "confidence": 0.9,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Remote's MCP and AI features are limited to employment and payroll data, whereas Rippling's unified record spans HR, IT, and Finance across 30+ products.",
+      "source": "website",
+      "confidence": 0.85,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Remote's isolved partnership targets US SMB/mid-market employers \u2014 the same segment where Rippling is the #1 mid-market payroll provider \u2014 via embedded channel distribution.",
+      "source": "press",
+      "confidence": 0.9,
+      "section": "rippling_relevance"
+    }
+  ],
+  "used_embedding_path": true,
+  "total_content_tokens": 9816
+}

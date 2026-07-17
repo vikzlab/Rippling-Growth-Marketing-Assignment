@@ -1,238 +1,238 @@
 {
   "competitor": "Gusto",
   "domain": "gusto.com",
-  "generated_at": "2026-07-17T05:49:23.929824+00:00",
+  "generated_at": "2026-07-17T08:07:21.244116+00:00",
   "sources": {
     "website": {
       "status": "success",
       "note": "(content reduced via embedding retrieval: 6 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:47:37.090975+00:00",
+      "checked_at": "2026-07-17T08:05:45.348329+00:00",
       "depth": "shallow",
       "source_url": "https://gusto.com"
     },
     "meta_ads": {
       "status": "success",
       "note": "30 active ad(s) found for 'Gusto' (page_id=187776731324057).",
-      "checked_at": "2026-07-17T05:48:07.437777+00:00",
+      "checked_at": "2026-07-17T08:05:57.403445+00:00",
       "depth": "shallow",
       "source_url": "https://www.facebook.com/187776731324057"
     },
     "google_ads": {
       "status": "success",
-      "note": "40 ad creative(s) found across 2 advertiser(s).",
-      "checked_at": "2026-07-17T05:47:56.784501+00:00",
+      "note": "39 ad creative(s) found for 'GUSTO CALIFORNIA, INC.'. 6 detail call(s) made for copy.",
+      "checked_at": "2026-07-17T08:05:58.278764+00:00",
       "depth": "shallow",
       "source_url": "https://ads.google.com/intl/en/home/transparency-center/"
     },
     "press": {
       "status": "success",
       "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 15 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:47:57.229279+00:00",
+      "checked_at": "2026-07-17T08:06:01.133949+00:00",
       "depth": "shallow",
       "source_url": "https://www.prnewswire.com/news-releases/gusto-launches-cofounder-an-ai-teammate-purpose-built-for-small-business-302787745.html"
     },
     "social": {
       "status": "success",
-      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 15 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:47:57.613247+00:00",
+      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 11 chunks -> top 5)",
+      "checked_at": "2026-07-17T08:06:05.058469+00:00",
       "depth": "shallow",
       "source_url": "https://www.linkedin.com/jobs/view/product-marketing-leader-gusto-core-products-at-gusto-4432172040"
     }
   },
   "claims": [
     {
-      "text": "9 out of 10 Gusto customers would recommend Gusto",
+      "text": "9 out of 10 Gusto customers would recommend Gusto, based on a survey of 538 customers in September 2024.",
       "source": "website",
       "confidence": 0.95,
       "section": "messaging"
     },
     {
-      "text": "Gusto customers save an average of 152 hours per year on tax and compliance by switching to Gusto",
+      "text": "Gusto claims customers save an average of 152 hours per year on tax and compliance by switching to Gusto.",
       "source": "website",
       "confidence": 0.95,
       "section": "messaging"
     },
     {
-      "text": "Gusto has a 4.5/5 star average rating from customers",
+      "text": "Gusto has a 4.5/5 star average rating from its customers.",
       "source": "website",
       "confidence": 0.95,
       "section": "messaging"
     },
     {
-      "text": "The 152 hrs/year and 9/10 recommendation statistics are based on a survey of 538 Gusto customers conducted in September 2024",
-      "source": "website",
-      "confidence": 0.95,
-      "section": "messaging"
-    },
-    {
-      "text": "Gusto serves 500,000+ small and medium-sized businesses",
+      "text": "More than 500,000 small and medium-sized businesses use Gusto.",
       "source": "website",
       "confidence": 0.98,
       "section": "messaging"
     },
     {
-      "text": "Gusto plans start at $49/month plus $6/month per person",
+      "text": "Gusto's plans start at $49/month plus $6/month per person.",
       "source": "website",
       "confidence": 0.95,
       "section": "messaging"
     },
     {
-      "text": "A Gusto Meta ad states plans start at $55 a month",
-      "source": "meta_ads",
-      "confidence": 0.95,
-      "section": "messaging"
-    },
-    {
-      "text": "Gusto positions itself as 'an all-in-one payroll and HR platform' in its FAQ",
-      "source": "website",
-      "confidence": 0.98,
-      "section": "messaging"
-    },
-    {
-      "text": "Gusto's core payroll product is designed for US-based businesses",
-      "source": "website",
-      "confidence": 0.98,
-      "section": "messaging"
-    },
-    {
-      "text": "Gusto's Canada EOR service is powered by Remote",
-      "source": "website",
-      "confidence": 0.98,
-      "section": "messaging"
-    },
-    {
-      "text": "Gusto offers international contractor payments as an add-on",
+      "text": "Gusto positions itself as 'one of the most affordable payroll and HR platforms on the market.'",
       "source": "website",
       "confidence": 0.95,
       "section": "messaging"
     },
     {
-      "text": "Gusto runs Meta ads with the copy 'Run payroll, onboard employees, manage time off, handle benefits, and stay compliant, with just one login'",
+      "text": "Gusto's core payroll product is designed for US-based businesses.",
+      "source": "website",
+      "confidence": 0.98,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto offers Canada EOR powered by Remote, and an international contractor add-on.",
+      "source": "website",
+      "confidence": 0.95,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto is running paid social ads targeting solopreneurs with the 'Gusto Solo' product, emphasizing S-corp payroll compliance and tax savings.",
       "source": "meta_ads",
       "confidence": 0.98,
       "section": "messaging"
     },
     {
-      "text": "Gusto runs Meta ads targeting S-corp solopreneurs with the Gusto Solo sub-brand",
+      "text": "Gusto is running paid social ads with the headline 'HR for Remote Teams' despite limited international payroll capabilities.",
       "source": "meta_ads",
       "confidence": 0.98,
       "section": "messaging"
     },
     {
-      "text": "Gusto runs Meta ads featuring Oakland Ballers GM Laura Geist as a customer story",
+      "text": "Gusto is running paid social ads with the headline 'Payroll built for bigger teams' suggesting a test of upmarket messaging.",
       "source": "meta_ads",
-      "confidence": 0.95,
+      "confidence": 0.9,
       "section": "messaging"
     },
     {
-      "text": "Gusto runs Meta ads with the copy 'As your team grows, Gusto keeps payroll, HR, and benefits simple and scalable'",
+      "text": "Gusto is running paid social ads with the headline 'Everything, in one place' claiming a unified platform for payroll, onboarding, time off, benefits, and compliance.",
       "source": "meta_ads",
       "confidence": 0.98,
       "section": "messaging"
     },
     {
-      "text": "Gusto launched its Spring 2026 Showcase on April 23, 2026, featuring nearly 75 product updates",
+      "text": "Gusto has been rated G2's #1 Product for Small Business according to its own ad copy.",
+      "source": "meta_ads",
+      "confidence": 0.85,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto is ranked #1 for small business payroll according to its own ad copy.",
+      "source": "meta_ads",
+      "confidence": 0.85,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto plans start at $55 a month according to at least one paid social ad.",
+      "source": "meta_ads",
+      "confidence": 0.9,
+      "section": "messaging"
+    },
+    {
+      "text": "In April 2026, Gusto announced reaching 500,000 customers and launched approximately 75 product updates as part of its Spring Showcase.",
       "source": "press",
       "confidence": 0.97,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included a feature called Assisted Payroll Prep, which flags unusual timesheet changes before payroll submission",
+      "text": "Gusto surpassed $1 billion in revenue.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included a Gusto Pro Dashboard aimed at accountants needing compliance visibility across clients",
+      "text": "Gusto launched level-funded health insurance plans, claiming average savings of 20% on premiums.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included a Benefits Advisor feature for guiding business owners on benefits selection",
+      "text": "Gusto launched a Payroll Hub for accountants, providing a consolidated dashboard to manage multiple client payrolls.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included Gusto 401(k) powered by Guideline, combining payroll and retirement in one dashboard",
+      "text": "Gusto launched Instant and Same-Day Pay as new pay speed options.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included Time Tracking in the Mobile App for admin approval of timesheets",
+      "text": "Gusto launched a 401(k) product powered by Guideline, integrated with payroll on a single dashboard.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included Automated Contractor Payments",
+      "text": "Gusto launched 'Gusto HR Partners,' a service matching businesses with dedicated HR professionals for onboarding, offboarding, compliance, and team development.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Spring 2026 Showcase included Instant and Same-Day Pay",
-      "source": "press",
-      "confidence": 0.9,
-      "section": "recent_changes"
-    },
-    {
-      "text": "Gusto surpassed $1 billion in trailing 12-month revenue as announced May 7, 2026",
-      "source": "press",
-      "confidence": 0.98,
-      "section": "recent_changes"
-    },
-    {
-      "text": "Gusto CEO Josh Reeves stated 'We don't view Gusto as a tool, we aspire to be a partner to small businesses' in the Spring 2026 Showcase press release",
+      "text": "Gusto added time tracking and timesheet approval capabilities to its mobile app for admins.",
       "source": "press",
       "confidence": 0.95,
       "section": "recent_changes"
     },
     {
-      "text": "Gusto's Head of Product Marketing described an AI/automation feature that can pull data from Google Sheets to calculate bonuses and run payroll",
+      "text": "Gusto integrated with Karbon practice management software, allowing accountants to track payroll work items inside Karbon.",
+      "source": "press",
+      "confidence": 0.95,
+      "section": "recent_changes"
+    },
+    {
+      "text": "A Gusto customer quote referenced bouncing between Gusto and a practice management system when running payroll, revealing tool-switching friction even for accountant partners.",
+      "source": "press",
+      "confidence": 0.95,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Gusto is developing AI-powered automation features including an agent that can pull data from Google Sheets, calculate bonuses and commissions, and trigger payroll runs, communicated via SMS or Slack.",
       "source": "social",
-      "confidence": 0.9,
+      "confidence": 0.85,
       "section": "recent_changes"
     },
     {
-      "text": "Gusto's AI automation feature was described as coming 'out of the box with ideas on how to automate all the things you already do on Gusto' to avoid the blank canvas problem",
+      "text": "Gusto's AI automation tools were built by a small team of five in a short sprint and are being opened to early access for a small group of Gusto customers.",
       "source": "social",
-      "confidence": 0.9,
+      "confidence": 0.85,
       "section": "recent_changes"
     },
     {
-      "text": "Gusto's all-in-one messaging covers payroll, HR, and benefits but does not include IT management, device provisioning, or spend management",
+      "text": "Gusto's EOR service for Canada is powered by Remote, a third-party provider and Gusto competitor.",
       "source": "website",
       "confidence": 0.95,
       "section": "rippling_relevance"
     },
     {
-      "text": "Gusto's Canada/international EOR capability is explicitly disclosed on its website as 'powered by Remote', a third-party provider",
-      "source": "website",
-      "confidence": 0.98,
-      "section": "rippling_relevance"
-    },
-    {
-      "text": "Gusto's Gusto Pro Dashboard is framed around accountant/bookkeeper use cases, signaling an accounting channel GTM motion",
+      "text": "Gusto's 401(k) product is powered by Guideline, a third-party provider, rather than being natively built.",
       "source": "press",
-      "confidence": 0.92,
+      "confidence": 0.95,
       "section": "rippling_relevance"
     },
     {
-      "text": "Gusto Solo is actively advertised via multiple concurrent Meta ads targeting S-corp solopreneurs, indicating a downmarket product investment",
+      "text": "Gusto is running multiple distinct paid social ad formats for Gusto Solo targeting S-corp solopreneurs, indicating a scaled campaign rather than a test.",
       "source": "meta_ads",
-      "confidence": 0.95,
+      "confidence": 0.9,
       "section": "rippling_relevance"
     },
     {
-      "text": "Gusto's 401(k) product is a partnership with Guideline, not a natively built capability",
-      "source": "press",
-      "confidence": 0.93,
-      "section": "rippling_relevance"
+      "text": "Gusto has 39 active or recent ads in the Google Ads library.",
+      "source": "google_ads",
+      "confidence": 0.95,
+      "section": "messaging"
+    },
+    {
+      "text": "Gusto is hiring a Head of Product for Payroll in the San Francisco Bay Area.",
+      "source": "social",
+      "confidence": 0.85,
+      "section": "recent_changes"
     }
   ],
   "used_embedding_path": true,
-  "total_content_tokens": 9338
+  "total_content_tokens": 9156
 }

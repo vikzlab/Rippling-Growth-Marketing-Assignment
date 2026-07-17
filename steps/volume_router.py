@@ -1,17 +1,6 @@
 """
-steps/volume_router.py
-=======================
-The literal implementation of the PRD Section 5.4 decision point:
-
-    if total_token_count(retrieved_content) < THRESHOLD:
-        pass content directly into synthesis prompt
-    else:
-        chunk + embed content -> retrieve top-k relevant chunks
-
-This file is PLAIN CODE -- it calls tools/token_counter.py (also plain code)
-to make the routing decision. No LLM is involved in deciding whether to use
-embeddings; that would be circular (paying for a model call to decide
-whether to save money on a later model call defeats the purpose).
+Routes content to synthesis directly or via embedding based on token count.
+Decision point: if content < threshold, skip embedding overhead.
 """
 
 from state import AgentState

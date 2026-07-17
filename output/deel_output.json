@@ -1,45 +1,268 @@
 {
   "competitor": "Deel",
   "domain": "deel.com",
-  "generated_at": "2026-07-17T05:51:03.879590+00:00",
+  "generated_at": "2026-07-17T08:09:03.851003+00:00",
   "sources": {
     "website": {
       "status": "success",
       "note": "",
-      "checked_at": "2026-07-17T05:49:29.705751+00:00",
+      "checked_at": "2026-07-17T08:07:26.963687+00:00",
       "depth": "shallow",
       "source_url": "https://deel.com"
     },
     "meta_ads": {
       "status": "success",
       "note": "30 active ad(s) found for 'Deel' (page_id=845620825830146).",
-      "checked_at": "2026-07-17T05:49:34.037805+00:00",
+      "checked_at": "2026-07-17T08:07:37.364523+00:00",
       "depth": "shallow",
       "source_url": "https://www.facebook.com/845620825830146"
     },
     "google_ads": {
       "status": "success",
-      "note": "40 ad creative(s) found across 3 advertiser(s).",
-      "checked_at": "2026-07-17T05:49:34.169608+00:00",
+      "note": "40 ad creative(s) found for 'Deel, Inc.'. 6 detail call(s) made for copy.",
+      "checked_at": "2026-07-17T08:07:38.173969+00:00",
       "depth": "shallow",
       "source_url": "https://ads.google.com/intl/en/home/transparency-center/"
     },
     "press": {
       "status": "success",
-      "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 17 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:49:37.329518+00:00",
+      "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 16 chunks -> top 5)",
+      "checked_at": "2026-07-17T08:07:40.987592+00:00",
       "depth": "shallow",
-      "source_url": "https://www.pymnts.com/back-office/payroll/2026/hr-platform-deel-pursues-120-billion-field-services-market"
+      "source_url": "https://www.scoop.co.nz/stories/BU2603/S00352/deel-unifies-the-global-worker-lifecycle-at-the-big-deel-2026.htm"
     },
     "social": {
       "status": "success",
-      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 15 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:49:40.762886+00:00",
+      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 17 chunks -> top 5)",
+      "checked_at": "2026-07-17T08:07:44.358235+00:00",
       "depth": "shallow",
-      "source_url": "https://www.linkedin.com/jobs/view/product-marketing-manager-it-products-at-deel-4105578968"
+      "source_url": "https://www.linkedin.com/in/sarahdeel"
     }
   },
-  "claims": [],
+  "claims": [
+    {
+      "text": "Deel's homepage leads with 'Hire, manage, pay, & equip anyone, anywhere'",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel positions itself as covering Deel Payroll, Deel HR, Deel IT, Deel Benefits, Deel Hire, and Deel Mobility as a single platform",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel is trusted by 40,000+ companies from startups to enterprise",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel supports 150+ currencies including crypto for centralized compliant payroll",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel claims 2,000+ local experts combined with in-house compliance logic and real-time AI",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel claims fully-owned infrastructure in 130+ countries",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel's homepage lists 'Deel Speed' as a named product/brand value",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel features a case study of Superfiliate switching to Deel after frustrations with Rippling",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "A Deel review testimonial on the homepage name-drops Rippling as an inferior payroll solution",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel has a 4.8/5 rating based on 14,000+ reviews (cited on homepage)",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel processed $20B+ in global payroll compliantly (homepage stat)",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel's NPS for enterprise customers is 90+",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel is running Meta ads in Portuguese targeting Brazilian market with global HR/payroll messaging",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel is running Meta ads in Spanish targeting Latin American/Spanish-speaking markets",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel is running Meta ads in French targeting Francophone markets",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel ran a Meta ad with headline 'Workday and payroll, securely in one place' positioning Deel as the payroll partner Workday trusts",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel ran Meta ads with headline 'Deel makes people operations feel...operational' using duct tape and spreadsheets pain point copy",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel ran a Meta ad with headline 'Global hiring, on your terms' referencing fully-owned infrastructure in 130+ countries",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Deel held its annual product conference 'The Big Deel 2026' on March 19, 2026, its 7th anniversary",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "At Big Deel 2026, Deel announced its largest set of platform updates to date",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel introduced an integrated operating model at Big Deel 2026 unifying hiring, compensation management, and workforce planning with owned global payroll infrastructure",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel announced 'Deel AI' at Big Deel 2026, framed as 'a real teammate, not a chatbot'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel's AI includes a Hiring agent that recommends talent partners, generates job descriptions, and guides sourcing including inside ChatGPT",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel is the first B2B HR and payroll app in ChatGPT",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel announced an Onboarding agent that proposes equipment, places orders, and sends updates automatically",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel announced Payroll AI that catches anomalies",
+      "source": "press",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel unveiled a fully redesigned mobile app featuring stablecoin pay, crypto earnings holding, and rewards",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel processed $22 billion in payroll in the year prior to Big Deel 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel processed $250 million in crypto payments in the year prior to Big Deel 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel launched 1,200 features and improvements in the year prior to Big Deel 2026",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel's Big Deel 2026 press language introduced 'no more fragmentation tax' and 'no more stitching tools together'",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel is hiring a Product Marketing Manager for IT products in EMEA per LinkedIn job posting",
+      "source": "social",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel's social content describes 'Deel Speed' as a company culture philosophy as well as a product feature",
+      "source": "social",
+      "confidence": 0.9,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Deel's unification claim at Big Deel 2026 mirrors platform-unification language historically associated with Rippling's positioning",
+      "source": "press",
+      "confidence": 0.85,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Deel's product lines (HR, Payroll, IT, Hire) were built or acquired separately rather than on a single underlying employee record",
+      "source": "website",
+      "confidence": 0.75,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Deel's Workday + Deel Meta ad targets buyers who want global payroll without replacing their existing HCM, positioning Deel as an add-on",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Deel surfaces Rippling by name in both a customer case study and a review testimonial on its homepage",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "rippling_relevance"
+    }
+  ],
   "used_embedding_path": true,
-  "total_content_tokens": 9764
+  "total_content_tokens": 10545
 }

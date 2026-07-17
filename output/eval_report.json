@@ -1,7 +1,7 @@
 [
   {
     "competitor": "Gusto",
-    "overall_score": 0.8,
+    "overall_score": 0.98,
     "checks": {
       "claims_grounded": {
         "pass": true,
@@ -24,20 +24,20 @@
         "detail": "Required sections present: ['Messaging', 'Relevance to Rippling']"
       },
       "rippling_relevance": {
-        "pass": false,
-        "score": 0.0,
-        "detail": "Grader response unparseable."
+        "pass": true,
+        "score": 0.92,
+        "detail": "Exceptionally specific and actionable: each of five points names a concrete Gusto structural weakness (fragmented data architecture, bolted-on integrations, US-only payroll, downmarket positioning, need for human HR add-ons) and ties it directly to a Rippling competitive advantage (unified record, native AI, global payroll, mid-market focus, programmatic automation), with explicit messaging angles and targeting recommendations for each."
       }
     }
   },
   {
     "competitor": "Deel",
-    "overall_score": 0.6,
+    "overall_score": 0.98,
     "checks": {
       "claims_grounded": {
-        "pass": false,
-        "score": 0.0,
-        "detail": "No claims produced at all."
+        "pass": true,
+        "score": 1.0,
+        "detail": "37/37 claims cite a valid source."
       },
       "source_diversity": {
         "pass": true,
@@ -55,20 +55,20 @@
         "detail": "Required sections present: ['Messaging', 'Relevance to Rippling']"
       },
       "rippling_relevance": {
-        "pass": false,
-        "score": 0.0,
-        "detail": "Grader response unparseable."
+        "pass": true,
+        "score": 0.92,
+        "detail": "Sections 1\u20134 are highly specific and actionable, grounded in Rippling's actual architectural advantages (unified single record vs. integrated suites) and tied to concrete competitive moves (Deel's homepage migration story, Workday co-marketing, agent positioning); Section 5 weakens the overall score slightly by explicitly acknowledging it is not actionable, but the analyst correctly flags it as monitoring-only rather than strategy."
       }
     }
   },
   {
     "competitor": "Justworks",
-    "overall_score": 0.8,
+    "overall_score": 0.98,
     "checks": {
       "claims_grounded": {
         "pass": true,
         "score": 1.0,
-        "detail": "20/20 claims cite a valid source."
+        "detail": "27/27 claims cite a valid source."
       },
       "source_diversity": {
         "pass": true,
@@ -86,9 +86,9 @@
         "detail": "Required sections present: ['Messaging', 'Relevance to Rippling']"
       },
       "rippling_relevance": {
-        "pass": false,
-        "score": 0.0,
-        "detail": "Grader response unparseable."
+        "pass": true,
+        "score": 0.92,
+        "detail": "Each of four angles is specific, actionable, and grounded in Rippling's actual competitive advantages (unified record, multi-product depth, automation over manual support); messaging recommendations are tied directly to observed Justworks positioning gaps and customer inflection points, with minimal generic filler."
       }
     }
   }

@@ -1,15 +1,5 @@
 """
-steps/clarify.py
-=================
-Decides whether the agent needs to ask the user a clarifying question before
-starting research (PRD requirement R4 / the assignment's "Should I focus on
-their enterprise or SMB positioning?" example).
-
-WHY THIS IS A CHEAP-MODEL STEP, NOT A FRONTIER-MODEL STEP (PRD Section 5.1):
-This is a real judgment call -- "is this competitor/request ambiguous enough
-to need clarification" -- so it's not plain code. But it's low-stakes and
-low-complexity: the model just needs to recognize genuine ambiguity, not do
-deep reasoning. That makes it a good fit for the fast/cheap model tier.
+Decides whether to ask a clarifying question before starting research.
 """
 
 import os

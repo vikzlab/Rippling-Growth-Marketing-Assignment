@@ -1,166 +1,208 @@
 {
   "competitor": "Justworks",
   "domain": "justworks.com",
-  "generated_at": "2026-07-17T05:52:15.056945+00:00",
+  "generated_at": "2026-07-17T08:10:34.262432+00:00",
   "sources": {
     "website": {
       "status": "success",
       "note": "",
-      "checked_at": "2026-07-17T05:51:09.889417+00:00",
+      "checked_at": "2026-07-17T08:09:09.676631+00:00",
       "depth": "shallow",
       "source_url": "https://justworks.com"
     },
     "meta_ads": {
       "status": "success",
       "note": "30 active ad(s) found for 'Justworks' (page_id=414870478589385).",
-      "checked_at": "2026-07-17T05:51:14.964131+00:00",
+      "checked_at": "2026-07-17T08:09:21.598607+00:00",
       "depth": "shallow",
       "source_url": "https://www.facebook.com/414870478589385"
     },
     "google_ads": {
       "status": "success",
-      "note": "40 ad creative(s) found across 2 advertiser(s).",
-      "checked_at": "2026-07-17T05:51:15.088638+00:00",
+      "note": "40 ad creative(s) found for 'Justworks'. 6 detail call(s) made for copy.",
+      "checked_at": "2026-07-17T08:09:22.386305+00:00",
       "depth": "shallow",
       "source_url": "https://ads.google.com/intl/en/home/transparency-center/"
     },
     "press": {
       "status": "success",
       "note": "8 press/news result(s) found. (content reduced via embedding retrieval: 16 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:51:17.776575+00:00",
+      "checked_at": "2026-07-17T08:09:25.121309+00:00",
       "depth": "shallow",
       "source_url": "https://www.justworks.com/press/press-release/justworks-launches-new-standalone-payroll-product"
     },
     "social": {
       "status": "success",
-      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 17 chunks -> top 5)",
-      "checked_at": "2026-07-17T05:51:22.009348+00:00",
+      "note": "8 social-related result(s) found. (content reduced via embedding retrieval: 15 chunks -> top 5)",
+      "checked_at": "2026-07-17T08:09:28.678535+00:00",
       "depth": "shallow",
-      "source_url": "https://www.linkedin.com/in/hannahccopeland"
+      "source_url": "https://www.linkedin.com/posts/munozamanda_i-am-thrilled-to-officially-join-the-marketing-activity-7467355255274627072-tQ2t"
     }
   },
   "claims": [
     {
-      "text": "Justworks' primary paid social tagline is 'Focus on what matters. Leave the rest to Justworks.'",
+      "text": "Justworks uses 'The Small Business Platform' as headline across all Meta ad creative",
       "source": "meta_ads",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks describes its platform as 'simplified and all-in-one' and targeted at small businesses.",
+      "text": "Justworks Meta ad copy includes 'Focus on what matters. Leave the rest to Justworks.'",
       "source": "meta_ads",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks positions itself as a PEO and payroll solution for small businesses on its homepage.",
+      "text": "Justworks Meta ad copy includes 'our simplified and all-in-one platform makes running your small business easier than ever before'",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks website headline frames the product as a solution 'for the Small Business Journey'",
       "source": "website",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks processed over $31 billion in payroll in 2025.",
+      "text": "Justworks website uses 'One Platform, More Possibilities' as a product section header",
       "source": "website",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks processed $8.9 billion in total taxes in 2025.",
+      "text": "Justworks processed over $31 billion in payroll in 2025",
       "source": "website",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks generated over 268,000 W-2s for PEO customers in 2025.",
+      "text": "Justworks processed $8.9 billion in total taxes in 2025",
       "source": "website",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks supports over 4,000 tax localities.",
+      "text": "Justworks generated over 268,000 W-2s for PEO customers in 2025",
       "source": "website",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks offers human support via phone, email, and chat built into the platform, which it describes as 'award-winning'.",
+      "text": "Justworks PEO supports over 4,000 tax localities",
       "source": "website",
       "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks includes international hiring (EOR/contractor) as a capability but frames it as a secondary feature, not a primary identity.",
+      "text": "Justworks positions human expert support via phone, email, and chat as an 'award-winning' differentiator",
       "source": "website",
-      "confidence": 0.85,
+      "confidence": 1.0,
       "section": "messaging"
     },
     {
-      "text": "Justworks launched an Analytics feature on March 11, 2026, described as 'A Clearer Way to Understand Your Business.'",
+      "text": "Justworks website describes international hiring as possible 'without spending hours or additional funds required to set up a foreign entity'",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks website uses 'Solution for Every Stage' framing to describe unlocking capabilities over time without switching platforms",
+      "source": "website",
+      "confidence": 1.0,
+      "section": "messaging"
+    },
+    {
+      "text": "Justworks launched an Analytics product on March 11, 2026, described as 'A Clearer Way to Understand Your Business'",
       "source": "press",
       "confidence": 1.0,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks launched a Dedicated HR Consulting product on December 5, 2025.",
+      "text": "Justworks Analytics product is framed as 'Your team is your biggest investment. Analytics helps you understand it.'",
       "source": "press",
       "confidence": 1.0,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks launched Automatic Overtime for Payroll in October 2025.",
+      "text": "Justworks launched Dedicated HR Consulting in December 2025, described as 'a strategic partner that provides personalized support, proactive guidance, and expert advice'",
       "source": "press",
       "confidence": 1.0,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks launched a new standalone payroll product (press release headline confirmed; full details truncated in source).",
+      "text": "Justworks released a Refreshed Benefits Overviews product update in December 2025",
       "source": "press",
-      "confidence": 0.85,
+      "confidence": 1.0,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks rebuilt its website after expanding from a single-product to a multi-solution platform, citing inconsistent design and a fragile CMS as problems.",
+      "text": "Justworks released Automatic Overtime for Payroll in October 2025",
+      "source": "press",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks is actively hiring a Senior Product Marketing Manager, International role based in New York",
+      "source": "social",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks is actively hiring a Staff Product Marketing Manager, AI & Analytics role",
+      "source": "social",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Amanda Mu\u00f1oz joined Justworks to lead partnerships GTM strategy and build a dedicated partner marketing function under CMO Catherine Crevels",
+      "source": "social",
+      "confidence": 1.0,
+      "section": "recent_changes"
+    },
+    {
+      "text": "Justworks rebuilt its website with a new design system and CMS after the old site couldn't support its multi-solution expansion, per agency Webstacks on LinkedIn",
       "source": "social",
       "confidence": 0.9,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks is hiring a Staff Product Marketing Manager for AI & Analytics.",
-      "source": "social",
+      "text": "Justworks is running 30+ video format ads on Google, with several newer creatives running for only 8-10 days",
+      "source": "google_ads",
       "confidence": 0.9,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks is hiring a Senior Product Marketing Manager for Growth and a Senior PMM for Pricing & Packaging.",
-      "source": "social",
-      "confidence": 0.9,
-      "section": "recent_changes"
-    },
-    {
-      "text": "Justworks won a Bronze Stevie Award in January 2026 for customer service excellence, described as the ninth consecutive year.",
-      "source": "press",
+      "text": "Justworks has one Google text ad that has been running for 284 days",
+      "source": "google_ads",
       "confidence": 1.0,
       "section": "recent_changes"
     },
     {
-      "text": "Justworks' website states the platform supports customers without 'the disruption of learning a whole new system' as needs shift.",
+      "text": "Justworks' international messaging does not cite specific country coverage, entity types, or depth of global payroll infrastructure",
+      "source": "website",
+      "confidence": 0.95,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Justworks' Meta ads repeat 'The Small Business Platform' as the headline across virtually every ad unit",
+      "source": "meta_ads",
+      "confidence": 1.0,
+      "section": "rippling_relevance"
+    },
+    {
+      "text": "Justworks touts human support (phone, email, chat) as a key product differentiator on its homepage",
       "source": "website",
       "confidence": 1.0,
       "section": "rippling_relevance"
     },
     {
-      "text": "Justworks' Analytics launch is framed as passive reporting ('understand your biggest investment'), not workflow automation.",
+      "text": "Justworks' Analytics product launched in March 2026, but its data scope is limited to HR/payroll data based on available product descriptions \u2014 no IT or Finance data sources are mentioned",
       "source": "press",
-      "confidence": 0.9,
-      "section": "rippling_relevance"
-    },
-    {
-      "text": "Justworks' ICP is explicitly small business; no mid-market or enterprise messaging is present in the sources reviewed.",
-      "source": "website",
-      "confidence": 0.9,
+      "confidence": 0.8,
       "section": "rippling_relevance"
     }
   ],
   "used_embedding_path": true,
-  "total_content_tokens": 9523
+  "total_content_tokens": 9998
 }

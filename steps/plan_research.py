@@ -1,21 +1,9 @@
 """
-steps/plan_research.py
-=======================
-The step that makes this a real agent, not a linear script (assignment
-requirement: "Make decisions... a real agentic loop"). Given a competitor,
-decides which sources are worth checking and in what order -- this is the
-step CrewAI's Flow calls first, before any tool runs (PRD Section 5.1).
-
-Paired with steps/adaptive_replan.py, which re-invokes this same kind of
-reasoning MID-RUN once results start coming back (PRD Flow B: "No Google ATC
-profile -- likely unverified advertiser... Deprioritizing further
-Google-specific research.").
-
-WHY CHEAP MODEL: this is a genuine judgment call, but a bounded, low-context
-one -- "which of 4 known source types matter here" is not a task that needs
-frontier-level reasoning depth.
+Decides which sources are worth checking for a competitor. Called before
+research starts (initial plan) and mid-run if sources fail (adaptive replan).
 """
 
+import json
 import os
 
 import anthropic

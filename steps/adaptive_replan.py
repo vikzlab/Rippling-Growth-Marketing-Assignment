@@ -1,22 +1,8 @@
 """
 steps/adaptive_replan.py
 =========================
-Re-invokes planning judgment MID-RUN, after initial research results are in.
-This is the exact mechanism from PRD Flow B: "No Google ATC profile --
-likely unverified advertiser... Deprioritizing further Google-specific
-research. Meta presence found -- worth checking Meta for recency signal
-instead of assuming inactive."
-
-This is what separates a real agentic loop from a linear script: the agent
-doesn't just execute a fixed plan, it reacts to what it actually found and
-can change course. Called only when at least one source came back EMPTY or
-FAILED -- if everything succeeded, there's nothing to adapt to, and skipping
-this call saves a model call that wouldn't change anything (cost-proportional
-design, PRD Section 5.1/R8).
-
-WHY CHEAP MODEL: same reasoning as plan_research.py -- this is a bounded
-judgment call over a known, small set of sources, not a task needing deep
-reasoning.
+Re-invokes planning judgment mid-run if sources came back empty or failed.
+Adapts the research plan based on actual results.
 """
 
 import os
